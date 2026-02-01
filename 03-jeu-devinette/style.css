@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.game-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5568d3;
+}
+
+#message {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    min-height: 30px;
+}
+
+#message.too-high {
+    color: #e74c3c;
+}
+
+#message.too-low {
+    color: #3498db;
+}
+
+#message.win {
+    color: #27ae60;
+    font-size: 28px;
+}
+
+#attempts {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#attempts span {
+    font-weight: bold;
+    color: #667eea;
+}
+
+#restartBtn {
+    background: #27ae60;
+    margin-top: 20px;
+}
+
+#restartBtn:hover {
+    background: #229954;
+}
+
+#history {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+#history h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+#historyList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#historyList li {
+    background: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #666;
+    font-weight: bold;
+}
